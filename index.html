@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tank Game</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+</head>
+<body>
+	<div id="topDiv">
+		<span id="startButton">New Game</span>
+		<h1>Tank Shooter</h1>
+		<span id="pauseButton" class="hidden"><i class="fas fa-pause"></i>  Pause</span>
+	</div>
+	<div id="canvasDiv"><canvas id="canvas" height="600px" width="1300px"></canvas></div>
+	<div id="controls" class="hidden">
+		<div id="missileDiv">
+			<span id="normalBox" class="active">
+				<i class="fas fa-space-shuttle"></i>
+				<span id ="type0Button" class="typebtn"></span>				
+			</span>
+			<span id="specialBox">
+				<i class="fas fa-rocket"></i>
+				<span id ="type1Button" class="typebtn"></span>	
+			</span>
+		</div>
+		<div >
+			<div id="angdiv">
+				Angle :
+				<button  id="angledown">
+					<i class="fas fa-arrow-circle-down"></i>
+				</button>
+				<span id="angle">65</span>
+				<button id="angleup">
+					<i class="fas fa-arrow-circle-up" ></i>
+				</button>				
+			</div>
+
+			
+			<div id="veldiv">
+				<button id="velocityDown">
+					<i class="fas fa-arrow-circle-left"></i>
+				</button>
+				<div id="vDispOut">
+					<div id="vDispIn"></div>
+				</div>
+				<button id="velocityUp">
+					<i class="fas fa-arrow-circle-right"></i>
+				</button>
+				
+				<span id="velocity">50</span>				
+			</div>
+
+			
+			<button id="shootButton"><i class="fas fa-fighter-jet"></i>  SHOOT</button>
+		</div>
+
+	</div>
+	
+
+	<script type="text/javascript" src="assets/js/index.js"></script>
+</body>
+</html>
